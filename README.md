@@ -211,21 +211,21 @@ My personal AI & Data Science engineering portfolio.
 
 ---
 
-## 📈 Recent Activity
+## 📈 Contribution Activity
 
 <div align="center">
 
-[![Achraf's GitHub activity graph](https://github-readme-activity-graph.vercel.app/graph?username=AchrafAbderrazik&theme=github-compact&hide_border=true)](https://github.com/AchrafAbderrazik)
+<img src="./dist/github-contribution-grid-snake.svg" alt="Achraf Abderrazik GitHub contribution activity" />
 
 </div>
 
 ---
 
-## 🏆 GitHub Achievements
+## 🏆 Building in Public
 
 <div align="center">
 
-[![trophy](https://github-profile-trophy.vercel.app/?username=AchrafAbderrazik&theme=onedark&no-frame=true&row=1&column=6)](https://github.com/ryo-ma/github-profile-trophy)
+Consistently building, learning, and shipping across AI, data, software engineering, and automation.
 
 </div>
 

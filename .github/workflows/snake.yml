@@ -1,0 +1,46 @@
+# Draws the contribution graph as an animated SVG and commits it to dist/,
+# where the README's "Contribution Activity" section shows it.
+# Only the built-in GitHub Actions token is used: there are no secrets to set up.
+
+name: Contribution snake
+
+on:
+  schedule:
+    # Every day at 00:17 UTC (off the hour, when GitHub's scheduler is busiest).
+    - cron: "17 0 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+# Never run two updates at once.
+concurrency:
+  group: contribution-snake
+  cancel-in-progress: false
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      # Actions are pinned to full commit SHAs, so a moved tag can't change what runs.
+      - name: Check out the repository
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+
+      - name: Generate the contribution snake
+        uses: Platane/snk/svg-only@d8f6715049803e982ee5ff501b6b9b7d5deeb09b # v3.5.0
+        with:
+          github_user_name: AchrafAbderrazik
+          outputs: dist/github-contribution-grid-snake.svg
+
+      - name: Commit the SVG if it changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add dist/github-contribution-grid-snake.svg
+          if git diff --cached --quiet; then
+            echo "The contribution graph hasn't changed."
+          else
+            git commit -m "Update contribution activity graph"
+            git push
+          fi
