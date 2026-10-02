@@ -41,7 +41,7 @@ I enjoy turning real-world problems into **clean, useful and production-oriented
 📍 Morocco  
 🎓 Software Engineering / AI & Data Science  
 🌐 [achraf-abderrazik.online](https://achraf-abderrazik.online)
-[![LinkedIn](https://shields.io)]([https://linkedin.com](https://www.linkedin.com/in/achraf-abderrazik/))
+[![LinkedIn](https://shields.io)](https://www.linkedin.com/in/achraf-abderrazik/)
 
 ---
 
