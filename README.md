@@ -41,7 +41,7 @@ I enjoy turning real-world problems into **clean, useful and production-oriented
 📍 Morocco  
 🎓 Software Engineering / AI & Data Science  
 🌐 [achraf-abderrazik.online](https://achraf-abderrazik.online)
-<img width="512" height="512" alt="image" src="https://github.com/user-attachments/assets/0eb7b5ac-2c00-4acc-a87e-318c5c43b238" /> (https://www.linkedin.com/in/achraf-abderrazik/)
+🌐 [(https://www.linkedin.com)](https://www.linkedin.com/in/achraf-abderrazik/)
 
 ---
 
